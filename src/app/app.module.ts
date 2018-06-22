@@ -28,7 +28,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
     SigninComponent,
     DropdownDirective
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpModule, RecipesModule],
+  imports: [BrowserModule, FormsModule, HttpModule, AppRoutingModule, RecipesModule],
   providers: [ShoppingListService, RecipeService, DataStorageService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
