@@ -8,7 +8,7 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 
 const recipesRoutes: Routes = [
   {
-    path: 'recipes',
+    path: '',
     component: RecipesComponent,
     children: [
       { path: '', component: RecipeStartComponent },
@@ -21,6 +21,7 @@ const recipesRoutes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(recipesRoutes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [AuthGuard]
 })
 export class RecipesRoutingModule {}
